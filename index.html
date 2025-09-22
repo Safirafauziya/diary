@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diary Safira & Nabiel</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📖 Diary Safira & Nabiel</h1>
+
+    <!-- Pilih penulis -->
+    <select id="author">
+      <option value="Safira">Safira</option>
+      <option value="Nabiel">Nabiel</option>
+    </select>
+
+    <!-- Tulis catatan -->
+    <textarea id="note" placeholder="Tulis catatanmu di sini..."></textarea>
+    <button onclick="saveNote()">💌 Simpan</button>
+
+    <!-- Catatan sebelumnya -->
+    <h2>Catatan Sebelumnya</h2>
+    <ul id="notesList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
